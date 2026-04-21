@@ -13,6 +13,76 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Program | HMA-III 2026</title>
+    
+    <!-- INTERNAL STYLES -->
+    <style>
+/* TABS */
+        :root {
+            /* YOUR ORIGINAL THEME COLORS */
+            --primary-color: #003366; 
+            --secondary-color: #ccc;
+            --text-main: #333333;
+            --text-light: #555555;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background: #ccc;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+
+        .tab-button.active {
+            background: #003366;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .day-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+.download-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2c7be5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+        .download-btn:hover {
+            background-color: #1a5edb;
+        }
+        
+    </style>    
+    
 </head>
 
 <body>
@@ -51,10 +121,15 @@
         </tr>
     </table>
 
-    <h2>Conference Program</h2>
-    <p>
-    The detailed conference program will be updated soon.
-    </p>
+    <h2 style="text-align: center;">Program Schedule</h2>
+ 
+     <div style="text-align: center;">
+        <h3>Tentative List of Participants</h3>
+           <p style="text-align: center;">Please download the  list below:</p>
+            <a href="assets/list.pdf" download class="download-btn">
+              📄 Download PDF
+            </a>
+    </div>
     
     <footer>
         &copy; <a href="https://www.hpuniv.ac.in/university-detail/home.php?physics-dept"> Conference Organizers </a>
@@ -65,4 +140,3 @@
 
 </body>
 </html>
-

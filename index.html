@@ -51,6 +51,59 @@
         </tr>
     </table>
 
+    </table> 
+    
+    <style>
+        .announcement-bar {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f8f9fa; /* Clean, light gray background */
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+            padding: 12px 0;
+            margin-bottom: 20px;
+            display: flex;
+            white-space: nowrap;
+        }
+
+        .ticker-wrapper {
+            display: flex;
+            animation: scrollText 20s linear infinite; 
+        }
+
+        .moving-link {
+            font-weight: bold;
+            font-size: 16px;
+            color: #0056b3; /* Professional university blue */
+            text-decoration: none;
+            padding-right: 100px; /* Space between the loops */
+        }
+
+        .announcement-bar:hover .ticker-wrapper {
+            animation-play-state: paused; 
+        }
+
+        .moving-link:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes scrollText {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+
+    <div class="announcement-bar">
+        <div class="ticker-wrapper">
+            <a href="assets/stay.pdf" target="_blank" class="moving-link">
+                🔔 Important: Click here to view and download the Stay Arrangements for Participants (PDF)
+            </a>
+            <a href="assets/stay.pdf" target="_blank" class="moving-link">
+                🔔 Important: Click here to view and download the Stay Arrangements for Participants (PDF)
+            </a>
+        </div>
+    </div>
+
     <h2>What is HMA-III 2026?</h2>
     <p>
     The Himalayan Meet of Astronomers (HMA-III), scheduled to be held at Department of Physics

@@ -55,10 +55,77 @@
         </tr>
     </table>
 
-    <h2>Conference Photos</h2>
-    <p>
-      Conference photographs will be made available here after the event.
-    </p>
+<div class="conference-photos-section">
+    
+    <!-- Self-contained CSS for the slideshow -->
+    <style>
+        .slideshow-container {
+            max-width: 700px;
+            position: relative;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .fade-slide {
+            animation-name: fadeAnimation;
+            animation-duration: 1.5s;
+        }
+        @keyframes fadeAnimation {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        .download-photos-link {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #0056b3; 
+            color: white !important;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #003d82; 
+        }
+    </style>
+
+    <h2 style="text-align: center;">Conference Photos</h2>
+    
+    <!-- The Automatic Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade-slide">
+            <!-- Replace with your actual photo file names in your assets folder -->
+            <img src="assets/pic1.jpg" alt="Conference Photo 1">
+        </div>
+<!--        <div class="mySlides fade-slide">
+            <img src="assets/pic2.jpg" alt="Conference Photo 2">
+        </div>
+        <div class="mySlides fade-slide">
+            <img src="assets/pic3.jpg" alt="Conference Photo 3">
+        </div> -->
+    </div>
+
+    <!-- The Download Link -->
+    <div class="download-photos-link">
+        <p style="text-align: center;">Want to see the rest of the memories?</p>
+        <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="download-btn">
+            📸 Click here to view and download all conference photos (will be active soon !!!)
+        </a>
+    </div>
     
     <footer>
         &copy; <a href="https://www.hpuniv.ac.in/university-detail/home.php?physics-dept"> Conference Organizers </a>
